@@ -1,6 +1,6 @@
 exports.dialogflowFulfillment = function(req, res) {
     
-    if (req.body.queryResult.intent.displayName == "faya_add") {
+    if (req.body.queryResult.intent.displayName == "dw_add") {
         var firstNum=req.body.queryResult.parameters.firstnumber;
         var secondNum=req.body.queryResult.parameters.secondnumber;
 
@@ -14,7 +14,7 @@ exports.dialogflowFulfillment = function(req, res) {
       }
       
 
-      if (req.body.queryResult.intent.displayName == "faya_subtract") {
+      if (req.body.queryResult.intent.displayName == "dw_subtract") {
         var firstNum=req.body.queryResult.parameters.firstnumber;
         var secondNum=req.body.queryResult.parameters.secondnumber;
 
